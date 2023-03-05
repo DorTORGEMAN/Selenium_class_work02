@@ -41,16 +41,7 @@ public class TestBase {
 
     }
 
-    public TestBase ErrorEmailMESERGE(By by){
-        WebElement element=driver.findElement(by);
-        boolean disp=element.isDisplayed();
-        if (disp)
-        System.out.println(element.getText()+": =-)");
-        else {
-            System.out.println("Error");
-        }
-        return this;
-    }
+
     public TestBase TwoElementEquals(WebElement element1,WebElement element2){
 
         String s1=element1.getText();

@@ -17,8 +17,8 @@ public class TestEmail extends TestBase {
          myTest = extent.startTest("TEST01 EMAILL Field Allow");
          myTest.log(LogStatus.INFO,"Check if i put Wrong Email in field display messenger");
          loginPage.LoginPop();
-        signUpPage.SignUpEmail("ddsddasd");
-        ErrorEmailMESERGE(By.cssSelector("li[class='parsley-type']"));
+        signUpPage.SignUpEmail("ddsddasd")
+                  .signUp_ErrorMail();
         myTest.log(LogStatus.PASS,"");
 
     }

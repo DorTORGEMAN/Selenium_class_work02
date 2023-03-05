@@ -2,6 +2,7 @@ package pageObject;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import test.TestBase;
 
 public class SignUpPage extends BasePage {
     public SignUpPage(WebDriver driver){
@@ -75,6 +76,7 @@ public class SignUpPage extends BasePage {
         return this;
     }
     public  SignUpPage signUp_ErrorMail(){
+        ErrorEmailMESERGE(SignUpErrorEmail);
         return this;
     }
 }

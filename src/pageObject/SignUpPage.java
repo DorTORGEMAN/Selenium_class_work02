@@ -22,7 +22,7 @@ public class SignUpPage extends BasePage {
     By SignUpGoogle=By.className("social-btn google");
     By SignUpClosePopup=By.cssSelector("span[class='close-btn'][title='סגירה']");
     By SignUpNewUser=By.cssSelector("button[type='submit']+ span:contains('הרשמה ל-BUYME')");
-
+    By SignUpErrorEmail=By.cssSelector("li[class='parsley-type']");
 
     ///Methods///
 
@@ -72,6 +72,9 @@ public class SignUpPage extends BasePage {
     }
     public SignUpPage signUp_Submit(){
         driver.findElement(SignUpNewUser).click();
+        return this;
+    }
+    public  SignUpPage signUp_ErrorMail(){
         return this;
     }
 }
